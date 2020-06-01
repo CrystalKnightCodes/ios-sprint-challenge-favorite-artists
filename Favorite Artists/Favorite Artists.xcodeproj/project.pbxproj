@@ -9,11 +9,12 @@
 /* Begin PBXBuildFile section */
 		BA530C0624849108004E40EE /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = BA530C0524849108004E40EE /* AppDelegate.m */; };
 		BA530C0924849108004E40EE /* SceneDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = BA530C0824849108004E40EE /* SceneDelegate.m */; };
-		BA530C0C24849108004E40EE /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BA530C0B24849108004E40EE /* ViewController.m */; };
 		BA530C0F24849108004E40EE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BA530C0D24849108004E40EE /* Main.storyboard */; };
 		BA530C1124849109004E40EE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BA530C1024849109004E40EE /* Assets.xcassets */; };
 		BA530C1424849109004E40EE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BA530C1224849109004E40EE /* LaunchScreen.storyboard */; };
 		BA530C1724849109004E40EE /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = BA530C1624849109004E40EE /* main.m */; };
+		BA530C2024849AB3004E40EE /* ArtistsTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BA530C1F24849AB3004E40EE /* ArtistsTableViewController.m */; };
+		BA530C2324849AD7004E40EE /* ArtistViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BA530C2224849AD7004E40EE /* ArtistViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,13 +23,15 @@
 		BA530C0524849108004E40EE /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		BA530C0724849108004E40EE /* SceneDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SceneDelegate.h; sourceTree = "<group>"; };
 		BA530C0824849108004E40EE /* SceneDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SceneDelegate.m; sourceTree = "<group>"; };
-		BA530C0A24849108004E40EE /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		BA530C0B24849108004E40EE /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		BA530C0E24849108004E40EE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		BA530C1024849109004E40EE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		BA530C1324849109004E40EE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		BA530C1524849109004E40EE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		BA530C1624849109004E40EE /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		BA530C1E24849AB3004E40EE /* ArtistsTableViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ArtistsTableViewController.h; sourceTree = "<group>"; };
+		BA530C1F24849AB3004E40EE /* ArtistsTableViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ArtistsTableViewController.m; sourceTree = "<group>"; };
+		BA530C2124849AD7004E40EE /* ArtistViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ArtistViewController.h; sourceTree = "<group>"; };
+		BA530C2224849AD7004E40EE /* ArtistViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ArtistViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -61,19 +64,29 @@
 		BA530C0324849108004E40EE /* Favorite Artists */ = {
 			isa = PBXGroup;
 			children = (
-				BA530C0424849108004E40EE /* AppDelegate.h */,
-				BA530C0524849108004E40EE /* AppDelegate.m */,
-				BA530C0724849108004E40EE /* SceneDelegate.h */,
-				BA530C0824849108004E40EE /* SceneDelegate.m */,
-				BA530C0A24849108004E40EE /* ViewController.h */,
-				BA530C0B24849108004E40EE /* ViewController.m */,
+				BA530C1D24849A7A004E40EE /* Resources */,
 				BA530C0D24849108004E40EE /* Main.storyboard */,
+				BA530C2124849AD7004E40EE /* ArtistViewController.h */,
+				BA530C2224849AD7004E40EE /* ArtistViewController.m */,
+				BA530C1E24849AB3004E40EE /* ArtistsTableViewController.h */,
+				BA530C1F24849AB3004E40EE /* ArtistsTableViewController.m */,
 				BA530C1024849109004E40EE /* Assets.xcassets */,
 				BA530C1224849109004E40EE /* LaunchScreen.storyboard */,
 				BA530C1524849109004E40EE /* Info.plist */,
 				BA530C1624849109004E40EE /* main.m */,
 			);
 			path = "Favorite Artists";
+			sourceTree = "<group>";
+		};
+		BA530C1D24849A7A004E40EE /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				BA530C0424849108004E40EE /* AppDelegate.h */,
+				BA530C0524849108004E40EE /* AppDelegate.m */,
+				BA530C0724849108004E40EE /* SceneDelegate.h */,
+				BA530C0824849108004E40EE /* SceneDelegate.m */,
+			);
+			name = Resources;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -146,10 +159,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				BA530C0C24849108004E40EE /* ViewController.m in Sources */,
+				BA530C2024849AB3004E40EE /* ArtistsTableViewController.m in Sources */,
 				BA530C0624849108004E40EE /* AppDelegate.m in Sources */,
 				BA530C1724849109004E40EE /* main.m in Sources */,
 				BA530C0924849108004E40EE /* SceneDelegate.m in Sources */,
+				BA530C2324849AD7004E40EE /* ArtistViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
