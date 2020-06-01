@@ -79,14 +79,14 @@
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="2nO-t1-CnT">
                                 <rect key="frame" x="10" y="220" width="394" height="632"/>
                                 <subviews>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DHf-si-v5K">
-                                        <rect key="frame" x="0.0" y="0.0" width="87" height="41"/>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Artist" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DHf-si-v5K">
+                                        <rect key="frame" x="0.0" y="0.0" width="78.5" height="41"/>
                                         <fontDescription key="fontDescription" style="UICTFontTextStyleTitle0"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Foundation Date" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XCq-2F-RjU">
-                                        <rect key="frame" x="0.0" y="49" width="157" height="26.5"/>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Start date" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XCq-2F-RjU">
+                                        <rect key="frame" x="0.0" y="49" width="93.5" height="26.5"/>
                                         <fontDescription key="fontDescription" style="UICTFontTextStyleTitle2"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
@@ -116,6 +116,13 @@
                     <navigationItem key="navigationItem" id="Mbm-Bg-eQc">
                         <barButtonItem key="rightBarButtonItem" systemItem="save" id="KZD-v6-AnK"/>
                     </navigationItem>
+                    <connections>
+                        <outlet property="artistLabel" destination="DHf-si-v5K" id="cIq-wl-6d5"/>
+                        <outlet property="biographyTextView" destination="OCK-SF-Rs0" id="iPz-2h-QvG"/>
+                        <outlet property="saveButton" destination="KZD-v6-AnK" id="BQq-G4-aKi"/>
+                        <outlet property="searchBar" destination="9bb-xv-JiK" id="t1t-sM-yow"/>
+                        <outlet property="yearFormed" destination="XCq-2F-RjU" id="JjK-Sq-j7Y"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="CB3-01-puw" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>

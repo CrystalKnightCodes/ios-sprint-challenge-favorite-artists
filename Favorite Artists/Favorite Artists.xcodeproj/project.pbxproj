@@ -17,6 +17,7 @@
 		BA530C2324849AD7004E40EE /* ArtistViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BA530C2224849AD7004E40EE /* ArtistViewController.m */; };
 		BA530C2724849C77004E40EE /* Artist.m in Sources */ = {isa = PBXBuildFile; fileRef = BA530C2624849C77004E40EE /* Artist.m */; };
 		BA530C2B2484A0B2004E40EE /* ArtistsController.m in Sources */ = {isa = PBXBuildFile; fileRef = BA530C2A2484A0B2004E40EE /* ArtistsController.m */; };
+		BA530C2F2484B0F8004E40EE /* Artist+JSONSerialization.m in Sources */ = {isa = PBXBuildFile; fileRef = BA530C2E2484B0F8004E40EE /* Artist+JSONSerialization.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -38,6 +39,8 @@
 		BA530C2624849C77004E40EE /* Artist.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Artist.m; sourceTree = "<group>"; };
 		BA530C292484A0B2004E40EE /* ArtistsController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ArtistsController.h; sourceTree = "<group>"; };
 		BA530C2A2484A0B2004E40EE /* ArtistsController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ArtistsController.m; sourceTree = "<group>"; };
+		BA530C2D2484B0F8004E40EE /* Artist+JSONSerialization.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Artist+JSONSerialization.h"; sourceTree = "<group>"; };
+		BA530C2E2484B0F8004E40EE /* Artist+JSONSerialization.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "Artist+JSONSerialization.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -72,6 +75,7 @@
 			children = (
 				BA530C1D24849A7A004E40EE /* Resources */,
 				BA530C0D24849108004E40EE /* Main.storyboard */,
+				BA530C302484B103004E40EE /* Helper */,
 				BA530C2824849C7E004E40EE /* Model */,
 				BA530C2C2484A0C4004E40EE /* Model Controller */,
 				BA530C2424849C3B004E40EE /* View Controllers */,
@@ -121,6 +125,15 @@
 				BA530C2A2484A0B2004E40EE /* ArtistsController.m */,
 			);
 			name = "Model Controller";
+			sourceTree = "<group>";
+		};
+		BA530C302484B103004E40EE /* Helper */ = {
+			isa = PBXGroup;
+			children = (
+				BA530C2D2484B0F8004E40EE /* Artist+JSONSerialization.h */,
+				BA530C2E2484B0F8004E40EE /* Artist+JSONSerialization.m */,
+			);
+			name = Helper;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -200,6 +213,7 @@
 				BA530C0924849108004E40EE /* SceneDelegate.m in Sources */,
 				BA530C2724849C77004E40EE /* Artist.m in Sources */,
 				BA530C2324849AD7004E40EE /* ArtistViewController.m in Sources */,
+				BA530C2F2484B0F8004E40EE /* Artist+JSONSerialization.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

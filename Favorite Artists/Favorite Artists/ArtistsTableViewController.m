@@ -81,7 +81,7 @@
 - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
     if ([segue.identifier isEqualToString:@"addArtistsSegue"]) {
             ArtistViewController *controller = (ArtistViewController *)segue.destinationViewController;
-            controller.artistsController = self.artistsController;
+        controller.artistsController = self.artistsController;
             
         }
         
