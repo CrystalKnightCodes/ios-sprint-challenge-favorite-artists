@@ -13,9 +13,10 @@ static NSString *baseURL = @"https://www.theaudiodb.com/api/v1/json/1/search.php
 
 @implementation ArtistsController
 
-- (void)fetchArtistWithName:(NSString *)name completion:(ArtistFetchCompletionHandler)completion {
+- (void)fetchArtistWithName:(NSString *)name
+                 completion:(ArtistFetcherCompletionHandler)completion {
     
-    NSURLComponents *urlComponents = [[NSURLComponents alloc] initWithString:baseURL];
+    NSURLComponents *urlComponents = [NSURLComponents componentsWithString:baseURL];
     urlComponents.queryItems = @[[NSURLQueryItem queryItemWithName:@"s" value:name]];
     
     NSURL *url = urlComponents.URL;
@@ -24,7 +25,7 @@ static NSString *baseURL = @"https://www.theaudiodb.com/api/v1/json/1/search.php
         return;
     }
     
-    NSURLSessionTask *task = [NSURLSession.sharedSession dataTaskWithURL:url completionHandler:^(NSData *_Nullable data, NSURLResponse *_Nullable response, NSError *_Nullable error) {
+    NSURLSessionTask * task = [NSURLSession.sharedSession dataTaskWithURL:url completionHandler:^(NSData * _Nullable data, NSURLResponse * _Nullable response, NSError * _Nullable error) {
         if (error) {
             completion(nil, error);
             return;
@@ -64,11 +65,11 @@ static NSString *baseURL = @"https://www.theaudiodb.com/api/v1/json/1/search.php
 - (NSArray *)fetchSavedArtists {
     NSArray *path = NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES);
     NSString *directory = [path objectAtIndex:0];
-    NSArray *filePath = [[NSFileManager defaultManager] subpathsOfDirectoryAtPath:directory error:nil];
+    NSArray *filePaths = [[NSFileManager defaultManager] subpathsOfDirectoryAtPath:directory error:nil];
     
     NSMutableArray *artists = [[NSMutableArray alloc] init];
     
-    for (NSString *artist in filePath) {
+    for (NSString *artist in filePaths) {
         NSString *artistForPath = [NSHomeDirectory() stringByAppendingFormat:@"/Documents/%@", artist];
         NSURL *artistURL = [NSURL fileURLWithPath:artistForPath];
         
@@ -81,7 +82,5 @@ static NSString *baseURL = @"https://www.theaudiodb.com/api/v1/json/1/search.php
     
     return artists;
 }
-
-
 
 @end

@@ -94,7 +94,7 @@
             NSLog(@"Fetched artist: %@", artist);
             self.artistSearch = artist;
             
-            dispatch_async(dispatch_get_main_queue(), ^ {
+            dispatch_async(dispatch_get_main_queue(), ^{
                 [self updateViews];
             });
         }];
@@ -107,12 +107,12 @@
         }
         
         NSData *data = [NSJSONSerialization dataWithJSONObject:[self.artistSearch toDictionary] options:0 error:nil];
-        NSURL *directory = [[NSFileManager defaultManager] URLForDirectory: NSDocumentDirectory inDomain:NSUserDomainMask appropriateForURL:nil create:YES error:nil];
+        NSURL *directory = [[NSFileManager defaultManager] URLForDirectory:NSDocumentDirectory inDomain:NSUserDomainMask appropriateForURL:nil create:YES error:nil];
         
         NSURL *url = [[directory URLByAppendingPathComponent:self.artistSearch.artist] URLByAppendingPathExtension:@"json"];
         
         NSLog(@"Directory: %@", directory);
-        NSLog(@"UR: %@", url);
+        NSLog(@"URL: %@", url);
         
         [data writeToURL:url atomically:YES];
         

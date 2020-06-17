@@ -10,13 +10,13 @@
 
 @class Artist;
 
-typedef void (^ArtistFetchCompletionHandler)(Artist* _Nullable artist, NSError *_Nullable error);
+typedef void (^ArtistFetcherCompletionHandler)(Artist* _Nullable artist, NSError *_Nullable error);
 
 NS_ASSUME_NONNULL_BEGIN
 
 @interface ArtistsController : NSObject
 
-- (void) fetchArtistWithName:(NSString *)name completion:(ArtistFetchCompletionHandler)completion;
+- (void) fetchArtistWithName:(NSString *)name completion:(ArtistFetcherCompletionHandler)completion;
 
 - (NSArray *)fetchSavedArtists;
 

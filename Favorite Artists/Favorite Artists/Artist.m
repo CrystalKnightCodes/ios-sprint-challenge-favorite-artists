@@ -10,7 +10,9 @@
 
 @implementation Artist
 
-- (instancetype)initWithArtist:(NSString *)artist yearFormed:(int)yearFormed biography:(NSString *)biography {
+- (instancetype)initWithArtist:(NSString *)artist
+                    yearFormed:(int)yearFormed
+                     biography:(NSString *)biography {
     self = [super init];
     
     if (self) {
