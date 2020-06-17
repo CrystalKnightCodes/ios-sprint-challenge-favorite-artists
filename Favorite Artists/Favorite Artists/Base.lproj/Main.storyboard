@@ -117,12 +117,15 @@
                         <viewLayoutGuide key="safeArea" id="fBV-bx-5zv"/>
                     </view>
                     <navigationItem key="navigationItem" id="Mbm-Bg-eQc">
-                        <barButtonItem key="rightBarButtonItem" systemItem="save" id="KZD-v6-AnK"/>
+                        <barButtonItem key="rightBarButtonItem" systemItem="save" id="KZD-v6-AnK">
+                            <connections>
+                                <action selector="saveButtonTapped:" destination="DHy-v5-516" id="urs-cK-SeX"/>
+                            </connections>
+                        </barButtonItem>
                     </navigationItem>
                     <connections>
                         <outlet property="artistLabel" destination="DHf-si-v5K" id="cIq-wl-6d5"/>
                         <outlet property="biographyTextView" destination="OCK-SF-Rs0" id="iPz-2h-QvG"/>
-                        <outlet property="saveButton" destination="KZD-v6-AnK" id="BQq-G4-aKi"/>
                         <outlet property="searchBar" destination="9bb-xv-JiK" id="t1t-sM-yow"/>
                         <outlet property="yearFormed" destination="XCq-2F-RjU" id="JjK-Sq-j7Y"/>
                     </connections>
@@ -149,6 +152,6 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="Fr6-UR-fsL"/>
+        <segue reference="bLf-uB-aD3"/>
     </inferredMetricsTieBreakers>
 </document>
